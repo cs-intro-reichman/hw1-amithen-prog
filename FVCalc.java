@@ -7,6 +7,6 @@ public class FVCalc {
 		double amount = currentvalue;
 		amount = amount * Math.pow(1 + rate/100, n);
 		// prints 2 years, $100 saved at 10.0% will yield $121
-		System.out.println("after " +(int) n + " years, $" + currentvalue + " saved at " + rate + "% will yield $" + amount);
+		System.out.println("After " + n + " years, $" + (int) currentvalue + " saved at " + rate + "% will yield $" + (int) amount);
 	}
 }
