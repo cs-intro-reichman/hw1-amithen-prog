@@ -9,7 +9,6 @@ public class Bill3 {
 		double share = bill / 3;
 		double money = Math.ceil(share);
 
-		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + moncey + " Shekels each.");
-;
+		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + money + " Shekels each.");
 	}
 }
