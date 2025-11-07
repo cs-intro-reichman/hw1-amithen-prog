@@ -2,32 +2,21 @@
 // and prints them in increasing order.
 public class Ascend {
 	public static void main(String[] args) {
-		int num1 = (int)(Math.random() * 3);
+		//recive an int input from command line
+		int range = Integer.parseInt(args[0]);
+		int a = (int)(Math.random() * range);
 
-		int num2 = (int)(Math.random() * 3());
+		int b = (int)(Math.random() * range);
 
-		int num3 = (int)(Math.random() * 3);
+		int c = (int)(Math.random() * range);
 
-		// Puts the numbers into increasing order:
-		if (num1 > num2) {
-			int temp = num1;
-			num1 = num2;
-			num2 = temp;
-		}
-		if (num1 > num3) {
-			int temp = num1;
-			num1 = num3;
-			num3 = temp;
-		}
-		if (num2 > num3) {
-			int temp = num2;
-			num2 = num3;
-			num3 = temp;
-		}
+		// checks what is the smallest, middle, and largest number using math.min and math.max	
 
-		// Prints the numbers:
-		System.out.println(num1);
-		System.out.println(num2);
-		System.out.println(num3);
+		int min = Math.min(a, Math.min(b, c));
+		int max = Math.max(a, Math.max(b, c));
+		int mid = a + b + c - min - max;
+		// prints the generated numbers followed by the same numbers in ascending order.
+		System.out.println(a + " " + b + " " + c);
+		System.out.println(min + " " + mid + " " + max);
 	}
 }

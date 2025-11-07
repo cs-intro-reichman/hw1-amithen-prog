@@ -7,8 +7,9 @@ public class Bill3 {
 		String name3 = args[2];
 		double bill = Double.parseDouble(args[3]);
 		double share = bill / 3;
-		System.out.println(name1 + "'s share: " + share);
-		System.out.println(name2 + "'s share: " + share);
-		System.out.println(name3 + "'s share: " + share);
+		double money = Math.ceil(share);
+
+		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + moncey + " Shekels each.");
+;
 	}
 }
